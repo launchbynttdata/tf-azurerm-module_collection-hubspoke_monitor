@@ -17,10 +17,10 @@ No providers.
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_monitor"></a> [monitor](#module\_monitor) | ../.. | n/a |
-| <a name="module_resource_names"></a> [resource\_names](#module\_resource\_names) | git::https://github.com/launchbynttdata/tf-launch-module_library-resource_name.git | 1.0.0 |
-| <a name="module_hub_vnet"></a> [hub\_vnet](#module\_hub\_vnet) | git::https://github.com/launchbynttdata/tf-azurerm-module_collection-hub_network.git | 1.0.0 |
-| <a name="module_network_security_group"></a> [network\_security\_group](#module\_network\_security\_group) | git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-network_security_group.git | 1.0.0 |
-| <a name="module_nsg_subnet_association"></a> [nsg\_subnet\_association](#module\_nsg\_subnet\_association) | git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-nsg_subnet_association.git | 1.0.0 |
+| <a name="module_resource_names"></a> [resource\_names](#module\_resource\_names) | terraform.registry.launch.nttdata.com/module_library/resource_name/launch | ~> 1.0 |
+| <a name="module_hub_vnet"></a> [hub\_vnet](#module\_hub\_vnet) | terraform.registry.launch.nttdata.com/module_collection/hub_network/azurerm | ~> 1.0 |
+| <a name="module_network_security_group"></a> [network\_security\_group](#module\_network\_security\_group) | terraform.registry.launch.nttdata.com/module_primitive/network_security_group/azurerm | ~> 1.0 |
+| <a name="module_nsg_subnet_association"></a> [nsg\_subnet\_association](#module\_nsg\_subnet\_association) | terraform.registry.launch.nttdata.com/module_primitive/nsg_subnet_association/azurerm | ~> 1.0 |
 
 ## Resources
 

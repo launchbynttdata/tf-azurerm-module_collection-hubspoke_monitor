@@ -11,7 +11,8 @@
 // limitations under the License.
 
 module "resource_names" {
-  source = "git::https://github.com/launchbynttdata/tf-launch-module_library-resource_name.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_library/resource_name/launch"
+  version = "~> 1.0"
 
   for_each = var.resource_names_map
 
@@ -26,7 +27,8 @@ module "resource_names" {
 }
 
 module "resource_group" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-resource_group.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/resource_group/azurerm"
+  version = "~> 1.0"
 
   name     = local.resource_group_name
   location = var.location
@@ -37,7 +39,8 @@ module "resource_group" {
 
 // Create diagnostic settings for the firewall
 module "monitor_diagnostic_setting" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-monitor_diagnostic_setting.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/monitor_diagnostic_setting/azurerm"
+  version = "~> 1.0"
 
   name                           = local.monitor_diagnostic_setting_name
   target_resource_id             = var.firewall_id
@@ -49,7 +52,8 @@ module "monitor_diagnostic_setting" {
 
 // Create a Log Analytics Workspace to be attached to diagnostic settings
 module "log_analytics_workspace" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-log_analytics_workspace.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/log_analytics_workspace/azurerm"
+  version = "~> 1.0"
 
   name                = local.log_analytics_workspace_name
   location            = var.location
@@ -63,7 +67,8 @@ module "log_analytics_workspace" {
 
 // Create a Storage Account for Network Watcher Flow Logs
 module "storage_account" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-storage_account.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/storage_account/azurerm"
+  version = "~> 1.0"
 
   storage_account_name = local.storage_account_name
   resource_group_name  = module.resource_group.name
@@ -80,7 +85,8 @@ module "storage_account" {
 
 // Create a Network Watcher
 module "network_watcher" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-network_watcher.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/network_watcher/azurerm"
+  version = "~> 1.0"
 
   count                = var.create_network_watcher ? 1 : 0
   network_watcher_name = local.network_watcher_name
@@ -92,7 +98,8 @@ module "network_watcher" {
 
 // Create a Network Watcher Flow Log for the Network Security Group
 module "network_watcher_flow_log" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-network_watcher_flow_log.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/network_watcher_flow_log/azurerm"
+  version = "~> 1.0"
 
   network_watcher_flow_log_name = local.network_watcher_flow_log_name
   network_watcher_name          = local.network_watcher_name

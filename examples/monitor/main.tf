@@ -46,7 +46,8 @@ module "monitor" {
 }
 
 module "resource_names" {
-  source = "git::https://github.com/launchbynttdata/tf-launch-module_library-resource_name.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_library/resource_name/launch"
+  version = "~> 1.0"
 
   for_each = var.resource_names_map
 
@@ -62,7 +63,8 @@ module "resource_names" {
 
 
 module "hub_vnet" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_collection-hub_network.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_collection/hub_network/azurerm"
+  version = "~> 1.0"
 
 
   resource_names_map      = var.resource_names_map
@@ -82,7 +84,8 @@ module "hub_vnet" {
 }
 
 module "network_security_group" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-network_security_group.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/network_security_group/azurerm"
+  version = "~> 1.0"
 
   name                = local.network_security_group_name
   location            = var.location
@@ -90,7 +93,8 @@ module "network_security_group" {
 }
 
 module "nsg_subnet_association" {
-  source = "git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-nsg_subnet_association.git?ref=1.0.0"
+  source  = "terraform.registry.launch.nttdata.com/module_primitive/nsg_subnet_association/azurerm"
+  version = "~> 1.0"
 
   network_security_group_id = local.network_security_group_id
   subnet_id                 = local.subnet_id

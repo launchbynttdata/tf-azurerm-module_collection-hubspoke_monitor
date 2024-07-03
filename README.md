@@ -121,13 +121,13 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_resource_names"></a> [resource\_names](#module\_resource\_names) | git::https://github.com/launchbynttdata/tf-launch-module_library-resource_name.git | 1.0.0 |
-| <a name="module_resource_group"></a> [resource\_group](#module\_resource\_group) | git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-resource_group.git | 1.0.0 |
-| <a name="module_monitor_diagnostic_setting"></a> [monitor\_diagnostic\_setting](#module\_monitor\_diagnostic\_setting) | git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-monitor_diagnostic_setting.git | 1.0.0 |
-| <a name="module_log_analytics_workspace"></a> [log\_analytics\_workspace](#module\_log\_analytics\_workspace) | git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-log_analytics_workspace.git | 1.0.0 |
-| <a name="module_storage_account"></a> [storage\_account](#module\_storage\_account) | git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-storage_account.git | 1.0.0 |
-| <a name="module_network_watcher"></a> [network\_watcher](#module\_network\_watcher) | git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-network_watcher.git | 1.0.0 |
-| <a name="module_network_watcher_flow_log"></a> [network\_watcher\_flow\_log](#module\_network\_watcher\_flow\_log) | git::https://github.com/launchbynttdata/tf-azurerm-module_primitive-network_watcher_flow_log.git | 1.0.0 |
+| <a name="module_resource_names"></a> [resource\_names](#module\_resource\_names) | terraform.registry.launch.nttdata.com/module_library/resource_name/launch | ~> 1.0 |
+| <a name="module_resource_group"></a> [resource\_group](#module\_resource\_group) | terraform.registry.launch.nttdata.com/module_primitive/resource_group/azurerm | ~> 1.0 |
+| <a name="module_monitor_diagnostic_setting"></a> [monitor\_diagnostic\_setting](#module\_monitor\_diagnostic\_setting) | terraform.registry.launch.nttdata.com/module_primitive/monitor_diagnostic_setting/azurerm | ~> 1.0 |
+| <a name="module_log_analytics_workspace"></a> [log\_analytics\_workspace](#module\_log\_analytics\_workspace) | terraform.registry.launch.nttdata.com/module_primitive/log_analytics_workspace/azurerm | ~> 1.0 |
+| <a name="module_storage_account"></a> [storage\_account](#module\_storage\_account) | terraform.registry.launch.nttdata.com/module_primitive/storage_account/azurerm | ~> 1.0 |
+| <a name="module_network_watcher"></a> [network\_watcher](#module\_network\_watcher) | terraform.registry.launch.nttdata.com/module_primitive/network_watcher/azurerm | ~> 1.0 |
+| <a name="module_network_watcher_flow_log"></a> [network\_watcher\_flow\_log](#module\_network\_watcher\_flow\_log) | terraform.registry.launch.nttdata.com/module_primitive/network_watcher_flow_log/azurerm | ~> 1.0 |
 
 ## Resources
 
